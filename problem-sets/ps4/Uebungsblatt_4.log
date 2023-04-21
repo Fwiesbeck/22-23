@@ -1,0 +1,446 @@
+{"type":["check_ps"],"time":["2023-04-21 15:49:39"],"user":["Florian Wiesbeck"],"umph":[1682084979.6687],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:49:39"],"user":["Florian Wiesbeck"],"umph":[1682084979.9768],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[1],"code":["Data <- read_csv(\"./Data/EU_Makro.csv\")\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_makro in chunk 1_a."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 15:50:01"],"user":["Florian Wiesbeck"],"umph":[1682085001.5207],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:50:01"],"user":["Florian Wiesbeck"],"umph":[1682085001.9494],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["eu_makro <- read_csv(\"./Data/EU_Makro.csv\")\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:50:04"],"user":["Florian Wiesbeck"],"umph":[1682085004.2602],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["eu_makro <- eu_makro %>%\n  mutate( debt_share_country_pro = debt_share_country * 100)\n  \ng1 <- eu_makro %>%\n  ggplot(aes(x = debt_share_country_pro, y = unempl)) + geom_point() + \n  xlab(\"Verschuldungsquote in %\") +\n  ylab(\"Arbeitslosenquote in %\")\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:50:04"],"user":["Florian Wiesbeck"],"umph":[1682085004.2875],"ok":[false],"chunk":[4],"ex":[1],"e.ind":[1],"code":["reg1 <- lm(.PH_._~debt_share_country_pro, data=.PH_._)\nsummary(.PH_._)\n\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 1_b."]}
+,
+{"type":["hint"],"time":["2023-04-21 15:51:51"],"user":["Florian Wiesbeck"],"umph":[1682085111.7053],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 15:52:38"],"user":["Florian Wiesbeck"],"umph":[1682085158.2436],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:52:38"],"user":["Florian Wiesbeck"],"umph":[1682085158.2822],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["reg1 <- lm(unempl~debt_share_country_pro, data=eu_makro)\nsummary(reg1)\n\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:52:38"],"user":["Florian Wiesbeck"],"umph":[1682085158.3047],"ok":[false],"chunk":[5],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_c."]}
+,
+{"type":["hint"],"time":["2023-04-21 15:55:21"],"user":["Florian Wiesbeck"],"umph":[1682085321.0728],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 15:55:40"],"user":["Florian Wiesbeck"],"umph":[1682085340.7196],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:55:40"],"user":["Florian Wiesbeck"],"umph":[1682085340.7586],"ok":[false],"chunk":[5],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n6.8"],"message":["\nYou have not yet entered all correct commands in chunk 1_c."]}
+,
+{"type":["hint"],"time":["2023-04-21 15:55:48"],"user":["Florian Wiesbeck"],"umph":[1682085348.3106],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 15:55:50"],"user":["Florian Wiesbeck"],"umph":[1682085350.8035],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 15:55:53"],"user":["Florian Wiesbeck"],"umph":[1682085353.5104],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 15:55:55"],"user":["Florian Wiesbeck"],"umph":[1682085355.6158],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 15:56:22"],"user":["Florian Wiesbeck"],"umph":[1682085382.7499],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:56:22"],"user":["Florian Wiesbeck"],"umph":[1682085382.7998],"ok":[false],"chunk":[5],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n6.894767"],"message":["\nYou have not yet entered all correct commands in chunk 1_c."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 15:56:45"],"user":["Florian Wiesbeck"],"umph":[1682085405.6353],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:56:45"],"user":["Florian Wiesbeck"],"umph":[1682085405.6558],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n6.895"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 15:56:45"],"user":["Florian Wiesbeck"],"umph":[1682085405.6717],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_d."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:00:22"],"user":["Florian Wiesbeck"],"umph":[1682085622.4264],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:01:28"],"user":["Florian Wiesbeck"],"umph":[1682085688.9308],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:01:29"],"user":["Florian Wiesbeck"],"umph":[1682085689.0114],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncoef(reg1)\nb0 <- coef(reg1)[1]\nb1<- coef(reg1)[2]\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:01:29"],"user":["Florian Wiesbeck"],"umph":[1682085689.0376],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[0],"code":["g2 <- g1 + geom_abline(intercept=.PH_._,slope=.PH_._,colour=\".PH_._\")\n\n# enter your code here ...\n\ng2"],"message":["evaluation error in \n  g2 <- g1 + geom_abline(intercept = ___, slope = ___, colour = \"___\")\n  Error in geom_abline(intercept = ___, slope = ___, colour = \"___\"): object '___' not found\n"]}
+,
+{"type":["hint"],"time":["2023-04-21 16:04:46"],"user":["Florian Wiesbeck"],"umph":[1682085886.9604],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0]}
+,
+{"type":["hint"],"time":["2023-04-21 16:05:40"],"user":["Florian Wiesbeck"],"umph":[1682085940.7287],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:06:05"],"user":["Florian Wiesbeck"],"umph":[1682085965.3198],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:06:05"],"user":["Florian Wiesbeck"],"umph":[1682085965.707],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["g2 <- g1 + geom_abline(intercept=b0,slope=b1,colour=\"blue\")\n\n# enter your code here ...\n\ng2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:06:05"],"user":["Florian Wiesbeck"],"umph":[1682085965.72],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:08:16"],"user":["Florian Wiesbeck"],"umph":[1682086096.0371],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:08:46"],"user":["Florian Wiesbeck"],"umph":[1682086126.6713],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:08:46"],"user":["Florian Wiesbeck"],"umph":[1682086126.7123],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\ncor(b1,b1,use=\"pairwise.complete.obs\")"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:08:53"],"user":["Florian Wiesbeck"],"umph":[1682086133.8295],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:09:05"],"user":["Florian Wiesbeck"],"umph":[1682086145.3009],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:09:51"],"user":["Florian Wiesbeck"],"umph":[1682086191.7666],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:09:51"],"user":["Florian Wiesbeck"],"umph":[1682086191.8031],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\ncor(b0,b1,use=\"pairwise.complete.obs\")"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:10:04"],"user":["Florian Wiesbeck"],"umph":[1682086204.6839],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:10:04"],"user":["Florian Wiesbeck"],"umph":[1682086204.7708],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\ncor(b1,b0,use=\"pairwise.complete.obs\")"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:10:58"],"user":["Florian Wiesbeck"],"umph":[1682086258.8304],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:10:58"],"user":["Florian Wiesbeck"],"umph":[1682086258.9072],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncor(eu_makro$debt_share_country_pro, eu_makro$unempl,use=\"pairwise.complete.obs\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:10:59"],"user":["Florian Wiesbeck"],"umph":[1682086259.0525],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["set.seed(1)\nT <-  20 # Zahl der Beobachtungen\nbeta0 <- 10; beta1 <- 2;\nu <- rnorm(T,0,3) # Normalverteilte Stoergroesse\nu\nx <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\nx\ny <- beta0 + beta1*x + u\ny"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:10:59"],"user":["Florian Wiesbeck"],"umph":[1682086259.0985],"ok":[false],"chunk":[10],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:13:24"],"user":["Florian Wiesbeck"],"umph":[1682086404.1507],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:13:24"],"user":["Florian Wiesbeck"],"umph":[1682086404.1772],"ok":[false],"chunk":[10],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:13:33"],"user":["Florian Wiesbeck"],"umph":[1682086413.4128],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:13:33"],"user":["Florian Wiesbeck"],"umph":[1682086413.5267],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:13:33"],"user":["Florian Wiesbeck"],"umph":[1682086413.5611],"ok":[false],"chunk":[11],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_3."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:14:52"],"user":["Florian Wiesbeck"],"umph":[1682086492.5133],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:15:22"],"user":["Florian Wiesbeck"],"umph":[1682086522.553],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:16:19"],"user":["Florian Wiesbeck"],"umph":[1682086579.3612],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:16:19"],"user":["Florian Wiesbeck"],"umph":[1682086579.4224],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nlm(y~x)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:16:19"],"user":["Florian Wiesbeck"],"umph":[1682086579.4458],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["simulate.and.estimate <- function(T=20, beta0 = 10, beta1=2) {\n  u <- rnorm(T,0,3) # Normalverteilte Stoergroesse\n  x <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\n  y <- beta0 + beta1*x + u\n  # Anmerkung lm.fit lauft schneller als\n  # lm, hat aber keinen so schoenen Syntax\n  reg <- lm.fit(x=cbind(1,x),y=y)\n  coef(reg)[2]\n}\nsimulate.and.estimate()\nsimulate.and.estimate()\nsimulate.and.estimate()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:16:19"],"user":["Florian Wiesbeck"],"umph":[1682086579.4654],"ok":[false],"chunk":[13],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:17:14"],"user":["Florian Wiesbeck"],"umph":[1682086634.5596],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:17:14"],"user":["Florian Wiesbeck"],"umph":[1682086634.5803],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:17:14"],"user":["Florian Wiesbeck"],"umph":[1682086634.591],"ok":[false],"chunk":[14],"ex":[2],"e.ind":[0],"code":[".PH_.__ <- .PH_.__(.PH_.__,simulate.and.estimate())\n\n# enter your code here ...\n"],"message":["evaluation error in \n  ____ <- ____(____, simulate.and.estimate())\n  Error in ____(____, simulate.and.estimate()): could not find function \"____\"\n"]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:17:53"],"user":["Florian Wiesbeck"],"umph":[1682086673.1058],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:17:54"],"user":["Florian Wiesbeck"],"umph":[1682086674.0984],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["sim.beta1 <- replicate(5000,simulate.and.estimate())\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:17:54"],"user":["Florian Wiesbeck"],"umph":[1682086674.1905],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_c_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:18:15"],"user":["Florian Wiesbeck"],"umph":[1682086695.9793],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:18:16"],"user":["Florian Wiesbeck"],"umph":[1682086696.1015],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:18:16"],"user":["Florian Wiesbeck"],"umph":[1682086696.4598],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["ggplot(mapping=aes(x=sim.beta1)) + geom_density(fill=\"blue\", alpha=0.5) + geom_vline(xintercept = 2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:18:16"],"user":["Florian Wiesbeck"],"umph":[1682086696.4716],"ok":[false],"chunk":[17],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_d."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:18:57"],"user":["Florian Wiesbeck"],"umph":[1682086737.2918],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:18:57"],"user":["Florian Wiesbeck"],"umph":[1682086737.3168],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nsd(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:18:57"],"user":["Florian Wiesbeck"],"umph":[1682086737.3495],"ok":[false],"chunk":[18],"ex":[2],"e.ind":[2],"code":["reg1 <-  lm(y~x)\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_e."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:20:01"],"user":["Florian Wiesbeck"],"umph":[1682086801.9868],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:20:02"],"user":["Florian Wiesbeck"],"umph":[1682086802.0449],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["reg1 <-  lm(y~x)\nsummary(reg1)\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:20:02"],"user":["Florian Wiesbeck"],"umph":[1682086802.0666],"ok":[false],"chunk":[19],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_f."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:21:21"],"user":["Florian Wiesbeck"],"umph":[1682086881.5533],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:21:21"],"user":["Florian Wiesbeck"],"umph":[1682086881.6705],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nconfint(reg1)\n\n# enter your code here ...\nconfint(reg1, level=0.99)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:21:24"],"user":["Florian Wiesbeck"],"umph":[1682086884.5834],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["ggplot(mapping = aes(x=x,y=y)) + geom_point()+ geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:21:25"],"user":["Florian Wiesbeck"],"umph":[1682086885.1928],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:21:25"],"user":["Florian Wiesbeck"],"umph":[1682086885.2761],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["eu_makro <-  eu_makro %>%\n  group_by(country) %>%\n  arrange(year) %>%\n  mutate(gdp_growth = 100*(gdp - lag(gdp)) / gdp ) %>%\n  ungroup()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:21:25"],"user":["Florian Wiesbeck"],"umph":[1682086885.313],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to dat in chunk 3_a_3."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:24:33"],"user":["Florian Wiesbeck"],"umph":[1682087073.1464],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:24:33"],"user":["Florian Wiesbeck"],"umph":[1682087073.2438],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\ndat<- subset(eu_makro, country = \"Deutschland\" | \"Frankreich | Niederlande\")"],"message":["\nYou have not made a correct assignment to dat in chunk 3_a_3."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:24:36"],"user":["Florian Wiesbeck"],"umph":[1682087076.404],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:25:56"],"user":["Florian Wiesbeck"],"umph":[1682087156.7529],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:26:53"],"user":["Florian Wiesbeck"],"umph":[1682087213.8461],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:27:36"],"user":["Florian Wiesbeck"],"umph":[1682087256.7332],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:27:36"],"user":["Florian Wiesbeck"],"umph":[1682087256.8161],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat<- filter(eu_makro, country %in% c( \"Germany\" , \"France\" , \"Netherlands\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:27:36"],"user":["Florian Wiesbeck"],"umph":[1682087256.9007],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:28:36"],"user":["Florian Wiesbeck"],"umph":[1682087316.8511],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:30:22"],"user":["Florian Wiesbeck"],"umph":[1682087422.3212],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:30:25"],"user":["Florian Wiesbeck"],"umph":[1682087425.3427],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:30:27"],"user":["Florian Wiesbeck"],"umph":[1682087427.6418],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:30:30"],"user":["Florian Wiesbeck"],"umph":[1682087430.2112],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:31:21"],"user":["Florian Wiesbeck"],"umph":[1682087481.6392],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:31:21"],"user":["Florian Wiesbeck"],"umph":[1682087481.6858],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:31:38"],"user":["Florian Wiesbeck"],"umph":[1682087498.8358],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:31:39"],"user":["Florian Wiesbeck"],"umph":[1682087499.0784],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:31:48"],"user":["Florian Wiesbeck"],"umph":[1682087508.9976],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:32:13"],"user":["Florian Wiesbeck"],"umph":[1682087533.807],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:32:13"],"user":["Florian Wiesbeck"],"umph":[1682087533.948],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$gdp_growth~dat$unempl)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:33:16"],"user":["Florian Wiesbeck"],"umph":[1682087596.4008],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:33:16"],"user":["Florian Wiesbeck"],"umph":[1682087596.4478],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:34:12"],"user":["Florian Wiesbeck"],"umph":[1682087652.1947],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:34:12"],"user":["Florian Wiesbeck"],"umph":[1682087652.2372],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:34:20"],"user":["Florian Wiesbeck"],"umph":[1682087660.9159],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:35:42"],"user":["Florian Wiesbeck"],"umph":[1682087742.7306],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:35:42"],"user":["Florian Wiesbeck"],"umph":[1682087742.7936],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1<- lm(dat$unempl~dat$gdp)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:36:21"],"user":["Florian Wiesbeck"],"umph":[1682087781.2749],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:36:21"],"user":["Florian Wiesbeck"],"umph":[1682087781.36],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1<- lm(dat$unempl~dat$gdp_growth)\nsummary(\"reg1\")\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:36:32"],"user":["Florian Wiesbeck"],"umph":[1682087792.3576],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:37:08"],"user":["Florian Wiesbeck"],"umph":[1682087828.9787],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:37:09"],"user":["Florian Wiesbeck"],"umph":[1682087829.0116],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:11"],"user":["Florian Wiesbeck"],"umph":[1682087831.2636],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:13"],"user":["Florian Wiesbeck"],"umph":[1682087833.4321],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:15"],"user":["Florian Wiesbeck"],"umph":[1682087835.4044],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:17"],"user":["Florian Wiesbeck"],"umph":[1682087837.029],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:18"],"user":["Florian Wiesbeck"],"umph":[1682087838.85],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:20"],"user":["Florian Wiesbeck"],"umph":[1682087840.8176],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:22"],"user":["Florian Wiesbeck"],"umph":[1682087842.6028],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:37:24"],"user":["Florian Wiesbeck"],"umph":[1682087844.8995],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:38:13"],"user":["Florian Wiesbeck"],"umph":[1682087893.4997],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:38:13"],"user":["Florian Wiesbeck"],"umph":[1682087893.5344],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\n\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:38:19"],"user":["Florian Wiesbeck"],"umph":[1682087899.123],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:40:23"],"user":["Florian Wiesbeck"],"umph":[1682088023.6764],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:40:23"],"user":["Florian Wiesbeck"],"umph":[1682088023.7478],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:41:09"],"user":["Florian Wiesbeck"],"umph":[1682088069.6071],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:41:09"],"user":["Florian Wiesbeck"],"umph":[1682088069.6888],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$gdp_growth~dat$unempl)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:41:35"],"user":["Florian Wiesbeck"],"umph":[1682088095.444],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:42:15"],"user":["Florian Wiesbeck"],"umph":[1682088135.2148],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:42:15"],"user":["Florian Wiesbeck"],"umph":[1682088135.2505],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl~dat$gdp_growth)\nsummary(reg1)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:43:31"],"user":["Florian Wiesbeck"],"umph":[1682088211.5776],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:43:31"],"user":["Florian Wiesbeck"],"umph":[1682088211.6375],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(unempl ~ gdp_growth, data = dat)\nsummary(reg1)\n\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:43:31"],"user":["Florian Wiesbeck"],"umph":[1682088211.6584],"ok":[false],"chunk":[25],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_a_5."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:48:33"],"user":["Florian Wiesbeck"],"umph":[1682088513.7198],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:48:33"],"user":["Florian Wiesbeck"],"umph":[1682088513.7722],"ok":[false],"chunk":[25],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n2"],"message":["\nYou have not yet entered all correct commands in chunk 3_a_5."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:48:38"],"user":["Florian Wiesbeck"],"umph":[1682088518.2284],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:48:38"],"user":["Florian Wiesbeck"],"umph":[1682088518.2582],"ok":[false],"chunk":[25],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n2"],"message":["\nYou have not yet entered all correct commands in chunk 3_a_5."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:50:30"],"user":["Florian Wiesbeck"],"umph":[1682088630.4882],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:50:30"],"user":["Florian Wiesbeck"],"umph":[1682088630.539],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:50:30"],"user":["Florian Wiesbeck"],"umph":[1682088630.5605],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:50:55"],"user":["Florian Wiesbeck"],"umph":[1682088655.1559],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:50:55"],"user":["Florian Wiesbeck"],"umph":[1682088655.1875],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:50:55"],"user":["Florian Wiesbeck"],"umph":[1682088655.2174],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:51:09"],"user":["Florian Wiesbeck"],"umph":[1682088669.4896],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:51:09"],"user":["Florian Wiesbeck"],"umph":[1682088669.5357],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n3"],"message":["\nOk, in chunk 3_b_2 your command\n\n    3\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'c'."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:51:57"],"user":["Florian Wiesbeck"],"umph":[1682088717.054],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:51:57"],"user":["Florian Wiesbeck"],"umph":[1682088717.0877],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nc(1,2,3)"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:52:07"],"user":["Florian Wiesbeck"],"umph":[1682088727.5818],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:52:07"],"user":["Florian Wiesbeck"],"umph":[1682088727.6307],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nc(3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:52:07"],"user":["Florian Wiesbeck"],"umph":[1682088727.9779],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[0],"code":["reg2 <- lm(unempl~gdp_growth, data=eu_makro)\nstargazer(type = \"text\", reg2 ,  single.row = TRUE, header = FALSE, digits=2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:52:07"],"user":["Florian Wiesbeck"],"umph":[1682088727.991],"ok":[false],"chunk":[29],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_c_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:52:50"],"user":["Florian Wiesbeck"],"umph":[1682088770.3102],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:52:50"],"user":["Florian Wiesbeck"],"umph":[1682088770.3406],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:52:50"],"user":["Florian Wiesbeck"],"umph":[1682088770.3649],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:53:36"],"user":["Florian Wiesbeck"],"umph":[1682088816.1909],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:53:36"],"user":["Florian Wiesbeck"],"umph":[1682088816.2215],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:53:36"],"user":["Florian Wiesbeck"],"umph":[1682088816.3154],"ok":[true],"chunk":[31],"ex":[4],"e.ind":[0],"code":["pwt <- readRDS(\"./data/pwt_2014.rds\")\nhead(pwt)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:53:36"],"user":["Florian Wiesbeck"],"umph":[1682088816.3357],"ok":[false],"chunk":[32],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg1 in chunk 4_b."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:54:42"],"user":["Florian Wiesbeck"],"umph":[1682088882.0672],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:54:42"],"user":["Florian Wiesbeck"],"umph":[1682088882.1119],"ok":[true],"chunk":[32],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(bip~k, data = pwt)\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:54:42"],"user":["Florian Wiesbeck"],"umph":[1682088882.1294],"ok":[false],"chunk":[33],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 4_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:54:56"],"user":["Florian Wiesbeck"],"umph":[1682088896.6552],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:54:56"],"user":["Florian Wiesbeck"],"umph":[1682088896.7061],"ok":[false],"chunk":[33],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 4_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:55:02"],"user":["Florian Wiesbeck"],"umph":[1682088902.7157],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:55:02"],"user":["Florian Wiesbeck"],"umph":[1682088902.7414],"ok":[true],"chunk":[33],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:55:03"],"user":["Florian Wiesbeck"],"umph":[1682088903.3929],"ok":[true],"chunk":[34],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=k,y=bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:55:03"],"user":["Florian Wiesbeck"],"umph":[1682088903.4105],"ok":[false],"chunk":[35],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pwt in chunk 4_d."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:56:33"],"user":["Florian Wiesbeck"],"umph":[1682088993.3186],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:56:33"],"user":["Florian Wiesbeck"],"umph":[1682088993.4158],"ok":[false],"chunk":[35],"ex":[4],"e.ind":[1],"code":["mutate(pwt, log_bip = log(pwt$bip), log_k= log(pwt$k))\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pwt in chunk 4_d."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:56:36"],"user":["Florian Wiesbeck"],"umph":[1682088996.8251],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 16:57:02"],"user":["Florian Wiesbeck"],"umph":[1682089022.5204],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 16:57:02"],"user":["Florian Wiesbeck"],"umph":[1682089022.6186],"ok":[false],"chunk":[35],"ex":[4],"e.ind":[1],"code":["mutate(pwt, log_bip = log(pwt$bip), log_k= log(pwt$k))\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pwt in chunk 4_d."]}
+,
+{"type":["hint"],"time":["2023-04-21 16:57:06"],"user":["Florian Wiesbeck"],"umph":[1682089026.1082],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:57:13"],"user":["Florian Wiesbeck"],"umph":[1682089033.8232],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 16:57:16"],"user":["Florian Wiesbeck"],"umph":[1682089036.6977],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 17:00:22"],"user":["Florian Wiesbeck"],"umph":[1682089222.8433],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:00:22"],"user":["Florian Wiesbeck"],"umph":[1682089222.9721],"ok":[false],"chunk":[35],"ex":[4],"e.ind":[1],"code":["mutate(pwt, log_bip = log(bip), log_k= log(k)) \n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pwt in chunk 4_d."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 17:01:29"],"user":["Florian Wiesbeck"],"umph":[1682089289.3024],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:01:29"],"user":["Florian Wiesbeck"],"umph":[1682089289.3525],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[0],"code":["pwt <- pwt %>%\nmutate(log_bip = log(bip), log_k= log(k)) \n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:01:30"],"user":["Florian Wiesbeck"],"umph":[1682089290.0187],"ok":[true],"chunk":[36],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=log_k,y=log_bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:01:30"],"user":["Florian Wiesbeck"],"umph":[1682089290.0335],"ok":[false],"chunk":[37],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg2 in chunk 4_e."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 17:03:42"],"user":["Florian Wiesbeck"],"umph":[1682089422.5697],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:03:42"],"user":["Florian Wiesbeck"],"umph":[1682089422.6269],"ok":[true],"chunk":[37],"ex":[4],"e.ind":[0],"code":["reg2 <- lm(log_bip~log_k, data=pwt)\nsummary(reg2)\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:03:42"],"user":["Florian Wiesbeck"],"umph":[1682089422.6437],"ok":[false],"chunk":[38],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 4_e_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 17:03:59"],"user":["Florian Wiesbeck"],"umph":[1682089439.4228],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:03:59"],"user":["Florian Wiesbeck"],"umph":[1682089439.4662],"ok":[true],"chunk":[38],"ex":[4],"e.ind":[0],"code":["3\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["grade_ps"],"time":["2023-04-21 17:04:28"],"user":["Florian Wiesbeck"],"umph":[1682089468.3285],"ok":[true]}
+,
+{"type":["init_ps"],"time":["2023-04-21 17:04:28"],"user":["Florian Wiesbeck"],"umph":[1682089468.3958],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:28"],"user":["Florian Wiesbeck"],"umph":[1682089468.4262],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(stargazer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:29"],"user":["Florian Wiesbeck"],"umph":[1682089469.1154],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["eu_makro <- read_csv(\"./Data/EU_Makro.csv\")\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:29"],"user":["Florian Wiesbeck"],"umph":[1682089469.5361],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["eu_makro <- eu_makro %>%\n  mutate( debt_share_country_pro = debt_share_country * 100)\n  \ng1 <- eu_makro %>%\n  ggplot(aes(x = debt_share_country_pro, y = unempl)) + geom_point() + \n  xlab(\"Verschuldungsquote in %\") +\n  ylab(\"Arbeitslosenquote in %\")\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:29"],"user":["Florian Wiesbeck"],"umph":[1682089469.5619],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["reg1 <- lm(unempl~debt_share_country_pro, data=eu_makro)\nsummary(reg1)\n\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:29"],"user":["Florian Wiesbeck"],"umph":[1682089469.576],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n6.895"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:29"],"user":["Florian Wiesbeck"],"umph":[1682089469.6169],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncoef(reg1)\nb0 <- coef(reg1)[1]\nb1<- coef(reg1)[2]\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:30"],"user":["Florian Wiesbeck"],"umph":[1682089470.1013],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["g2 <- g1 + geom_abline(intercept=b0,slope=b1,colour=\"blue\")\n\n# enter your code here ...\n\ng2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:30"],"user":["Florian Wiesbeck"],"umph":[1682089470.1133],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncor(eu_makro$debt_share_country_pro, eu_makro$unempl,use=\"pairwise.complete.obs\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:30"],"user":["Florian Wiesbeck"],"umph":[1682089470.1858],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["set.seed(1)\nT <-  20 # Zahl der Beobachtungen\nbeta0 <- 10; beta1 <- 2;\nu <- rnorm(T,0,3) # Normalverteilte Stoergroesse\nu\nx <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\nx\ny <- beta0 + beta1*x + u\ny"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:30"],"user":["Florian Wiesbeck"],"umph":[1682089470.2125],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:30"],"user":["Florian Wiesbeck"],"umph":[1682089470.2578],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nlm(y~x)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:30"],"user":["Florian Wiesbeck"],"umph":[1682089470.2707],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["simulate.and.estimate <- function(T=20, beta0 = 10, beta1=2) {\n  u <- rnorm(T,0,3) # Normalverteilte Stoergroesse\n  x <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\n  y <- beta0 + beta1*x + u\n  # Anmerkung lm.fit lauft schneller als\n  # lm, hat aber keinen so schoenen Syntax\n  reg <- lm.fit(x=cbind(1,x),y=y)\n  coef(reg)[2]\n}\nsimulate.and.estimate()\nsimulate.and.estimate()\nsimulate.and.estimate()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:30"],"user":["Florian Wiesbeck"],"umph":[1682089470.2836],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:31"],"user":["Florian Wiesbeck"],"umph":[1682089471.8563],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["sim.beta1 <- replicate(5000,simulate.and.estimate())\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:31"],"user":["Florian Wiesbeck"],"umph":[1682089471.9904],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:32"],"user":["Florian Wiesbeck"],"umph":[1682089472.4188],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["ggplot(mapping=aes(x=sim.beta1)) + geom_density(fill=\"blue\", alpha=0.5) + geom_vline(xintercept = 2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:32"],"user":["Florian Wiesbeck"],"umph":[1682089472.4398],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nsd(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:32"],"user":["Florian Wiesbeck"],"umph":[1682089472.5138],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["reg1 <-  lm(y~x)\nsummary(reg1)\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:32"],"user":["Florian Wiesbeck"],"umph":[1682089472.545],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nconfint(reg1)\n\n# enter your code here ...\nconfint(reg1, level=0.99)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:33"],"user":["Florian Wiesbeck"],"umph":[1682089473.3403],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["ggplot(mapping = aes(x=x,y=y)) + geom_point()+ geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.028],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.2432],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["eu_makro <-  eu_makro %>%\n  group_by(country) %>%\n  arrange(year) %>%\n  mutate(gdp_growth = 100*(gdp - lag(gdp)) / gdp ) %>%\n  ungroup()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.3658],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat<- filter(eu_makro, country %in% c( \"Germany\" , \"France\" , \"Netherlands\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.3987],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(unempl ~ gdp_growth, data = dat)\nsummary(reg1)\n\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.4104],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.4262],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.4478],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nc(3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.7073],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[0],"code":["reg2 <- lm(unempl~gdp_growth, data=eu_makro)\nstargazer(type = \"text\", reg2 ,  single.row = TRUE, header = FALSE, digits=2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.7205],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.734],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.7882],"ok":[true],"chunk":[31],"ex":[4],"e.ind":[0],"code":["pwt <- readRDS(\"./data/pwt_2014.rds\")\nhead(pwt)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.8365],"ok":[true],"chunk":[32],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(bip~k, data = pwt)\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:34"],"user":["Florian Wiesbeck"],"umph":[1682089474.8557],"ok":[true],"chunk":[33],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:35"],"user":["Florian Wiesbeck"],"umph":[1682089475.4768],"ok":[true],"chunk":[34],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=k,y=bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:35"],"user":["Florian Wiesbeck"],"umph":[1682089475.4992],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[0],"code":["pwt <- pwt %>%\nmutate(log_bip = log(bip), log_k= log(k)) \n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:36"],"user":["Florian Wiesbeck"],"umph":[1682089476.2801],"ok":[true],"chunk":[36],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=log_k,y=log_bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:36"],"user":["Florian Wiesbeck"],"umph":[1682089476.3141],"ok":[true],"chunk":[37],"ex":[4],"e.ind":[0],"code":["reg2 <- lm(log_bip~log_k, data=pwt)\nsummary(reg2)\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 17:04:36"],"user":["Florian Wiesbeck"],"umph":[1682089476.3315],"ok":[true],"chunk":[38],"ex":[4],"e.ind":[0],"code":["3\n# enter your code here ...\n"],"message":[""]}
+,
